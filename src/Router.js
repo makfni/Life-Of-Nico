@@ -9,8 +9,8 @@ export default function BaseRouter() {
         <div>
             <Switch>
                 <Route exact path="/" component={mainPage} />
-                <Route exact path="/about-me" component={aboutMe} />
-                <Route exact path="/photography" component={photography} />
+                <Route path="/about-me" component={aboutMe} />
+                <Route path="/photography" component={photography} />
             </Switch>
         </div>
     )
