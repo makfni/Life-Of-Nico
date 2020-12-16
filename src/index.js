@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import app from './App'
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import aboutMe from './Containers/AboutMe/AboutMe'
+import photography from './Containers/Photography/Photography'
+import mainPage from './Containers/MainPage/MainPage';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App style={{ margin: '0' }} />
-  </React.StrictMode>,
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Switch>
+      <Route exact path="/" component={mainPage} />
+      <Route exact path="/about-me" component={aboutMe} />
+      <Route exact path="/photography" component={photography} />
+    </Switch>
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 

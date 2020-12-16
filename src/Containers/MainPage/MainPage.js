@@ -9,7 +9,7 @@ import Footer from '../../Components/Footer/Footer'
 class mainPage extends Component {
     render() {
         return (
-            <div style={{ paddingLeft: '70px', paddingRight: '70px', marginTop: '1000px' }}>
+            <div style={{ paddingLeft: '70px', paddingRight: '70px' }}>
                 <div className="page-header">
                     <NavBar />
                 </div>

@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
+import mainPage from './Containers/MainPage/MainPage'
 import BaseRouter from './Router'
 import BarLoader from "react-spinners/BarLoader";
 import { css } from '@emotion/react'
 import './App.css'
 
-function App() {
+function reactApp() {
 
   // const override = css`
   //   display: block;
@@ -35,13 +36,11 @@ function App() {
           />
           : */}
       <div className="content-wrap">
-        <Router>
-          <BaseRouter />
-        </Router>
+        <mainPage />
       </div>
       {/* } */}
     </div>
   );
 }
 
-export default App;
+export default reactApp;
