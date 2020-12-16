@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import Photo from './PhotographyStyle'
 import images from './Images'
 import Popup from './Popup'
-import NavBar from '../../Components/Navbar/Navbar'
-import Footer from '../../Components/Footer/Footer'
 
 export default class photography extends Component {
 
@@ -48,7 +46,6 @@ export default class photography extends Component {
 
         return (
             <div style={{ paddingLeft: '70px', paddingRight: '70px' }}>
-                <NavBar />
                 <Photo>
                     <div className="container">
                         {gallery}
@@ -60,7 +57,6 @@ export default class photography extends Component {
                         ) : null}
                     </div>
                 </Photo>
-                <Footer />
             </div>
 
         )

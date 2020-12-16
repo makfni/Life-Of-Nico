@@ -5,8 +5,8 @@ export const Ul = styled.ul`
         list-style: none;
         display: flex;
         flex-flow: row nowrap;
-        ${'' /* margin-right: 55px; */}
-        padding: 55px;
+        margin-right: 45px;
+        
     }
         
     li{

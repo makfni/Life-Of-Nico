@@ -15,19 +15,20 @@ export const Nav = styled.nav`
     position: fixed;
     top: 0;
     ${'' /* border-bottom: 2px solid #f1f1f1; */}
-    padding: 0 100px;
     justify-content: space-between;
-    margin-left: -150px;
+    ${'' /* margin-left: -150px; */}
+    padding: 10px;
     
     .nav-logo{
         padding: 15px 0;
-        margin-left: 55px;
+        ${'' /* margin-left: 55px; */}
         #logo{
             color: white;
             font-family: 'Righteous';
             font-weight: bold;
             font-size: 25px;
             text-decoration: none;
+            padding-left: 65px;
         }
     }
 ${'' /* 

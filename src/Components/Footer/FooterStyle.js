@@ -7,6 +7,7 @@ export const Footer = styled.div`
 
     ul{
         display: inline;
+        bottom: 0;
     }
 
     .main-footer {
@@ -16,6 +17,6 @@ export const Footer = styled.div`
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        padding-right: auto !important;
+       
     }
 `

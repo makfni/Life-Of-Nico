@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Ul } from './SideDrawerStyle'
-
+import { Link } from 'react-router-dom'
 
 const SideDrawer = ({ open }) => {
     return (
@@ -10,19 +10,20 @@ const SideDrawer = ({ open }) => {
 
                 {/* <img id="hamburger" src="/images/hamburger-icon.png" /> */}
                 <li>
-                    <a href="/about-me" aria-haspopup="true">About Me</a>
+                    <Link to="/about-me">About Me</Link>
+                    {/* <a href="/about-me" aria-haspopup="true">About Me</a> */}
                 </li>
                 <li>
-                    <a href="/photography" aria-haspopup="true">My Photography</a>
+                    <Link to="/photography" aria-haspopup="true">My Photography</Link>
                 </li>
                 <li>
-                    <a href="https://github.com/makfni">Projects</a>
+                    <Link to="https://github.com/makfni">Projects</Link>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <Link to="#">Contact</Link>
                 </li>
                 <li>
-                    <a href="/login-register" id="auth">Login/Register</a>
+                    <Link to="/login-register" id="auth">Login/Register</Link>
                 </li>
             </ul>
             {/* </NavbarContainer> */}

@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import NavBar from './Components/Navbar/Navbar'
+// import Footer from './Components/Footer/Footer'
 import mainPage from './Containers/MainPage/MainPage'
-import BaseRouter from './Router'
-import BarLoader from "react-spinners/BarLoader";
-import { css } from '@emotion/react'
+import aboutMe from './Containers/AboutMe/AboutMe'
+import photography from './Containers/Photography/Photography'
+// import BarLoader from "react-spinners/BarLoader";
+// import { css } from '@emotion/react'
 import './App.css'
 
 function reactApp() {
 
-  // const override = css`
+  // const override = css`   , { useState, useEffect }
   //   display: block;
   //   margin: 0 auto;
 
@@ -22,8 +25,9 @@ function reactApp() {
   //   }, 1000)
   // }, [])
   return (
-    <div className="page-container">
-      {/* {
+    <Router>
+      <div className="page-container">
+        {/* {
         loading ?
           <BarLoader
             css={override}
@@ -35,11 +39,17 @@ function reactApp() {
 
           />
           : */}
-      <div className="content-wrap">
-        <mainPage />
+        <NavBar />
+
+        <Switch>
+          <Route exact path="/" component={mainPage} />
+          <Route exact path="/about-me" component={aboutMe} />
+          <Route exact path="/photography" component={photography} />
+        </Switch>
+
+        {/* } */}
       </div>
-      {/* } */}
-    </div>
+    </Router>
   );
 }
 

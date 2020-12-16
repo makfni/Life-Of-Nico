@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
-import NavBar from '../../Components/Navbar/Navbar'
 import AboutMe from './AboutMeStyle'
-import Footer from '../../Components/Footer/Footer'
 
 export default class aboutMe extends Component {
     render() {
         return (
             <div className="body" style={{ paddingLeft: '70px', paddingRight: '70px' }}>
                 <AboutMe>
-                    <NavBar />
                     <div className="content">
                         <div className="about-me">
                             <img src="/images/DSC_0796.jpg" alt="me" id="photo" />
@@ -23,7 +20,6 @@ export default class aboutMe extends Component {
                         </div>
                     </div>
                 </AboutMe>
-                <Footer />
             </div>
         )
     }

@@ -1,19 +1,13 @@
 import React, { Component } from 'react'
 import { Particles } from '@blackbox-vision/react-particles';
-import NavBar from '../../Components/Navbar/Navbar'
 import { Content } from './MainPageStyle'
 import FlashCards from '../../Components/Content/FlashCards'
-import Footer from '../../Components/Footer/Footer'
 
 
 class mainPage extends Component {
     render() {
         return (
-            <div style={{ paddingLeft: '70px', paddingRight: '70px' }}>
-                <div className="page-header">
-                    <NavBar />
-                </div>
-
+            <div style={{ paddingLeft: '70px', paddingRight: '70px', paddingTop: '1000px' }}>
                 <Content>
                     <div className="content">
                         <Particles
@@ -94,7 +88,6 @@ class mainPage extends Component {
                     </div>
 
                 </Content>
-                <Footer />
             </div>
         )
     }
