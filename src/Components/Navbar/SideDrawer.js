@@ -17,7 +17,7 @@ const SideDrawer = ({ open }) => {
                     <Link to="/photography" aria-haspopup="true">My Photography</Link>
                 </li>
                 <li>
-                    <Link to="https://github.com/makfni">Projects</Link>
+                    <a href="https://github.com/makfni">Projects</a>
                 </li>
                 <li>
                     <Link to="#">Contact</Link>

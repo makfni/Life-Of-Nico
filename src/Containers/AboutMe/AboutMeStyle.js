@@ -6,7 +6,7 @@ const AboutMe = styled.div`
         background-color: #1d1d1d;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding-bottom: 400px;
-        margin-top: 300px;
+        margin-top: 80px;
 
     }
 
@@ -40,7 +40,7 @@ const AboutMe = styled.div`
 
     #photo{
         width: 20%;
-        height: 350px;
+        height: 375px;
         border-radius: 50px;
         margin-left: -150px;
     }

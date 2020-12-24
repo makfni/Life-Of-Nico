@@ -10,7 +10,6 @@ const Photo = styled.div`
         align-items: center;
         justify-content: center;
         align-content: flex-start;
-        padding-top: 100px;
     }
     
     .singleImage {

@@ -39,13 +39,17 @@ function reactApp() {
 
           />
           : */}
-        <NavBar />
+        <NavBar style={{ paddingBottom: '75px' }} />
 
-        <Switch>
-          <Route exact path="/" component={mainPage} />
-          <Route exact path="/about-me" component={aboutMe} />
-          <Route exact path="/photography" component={photography} />
-        </Switch>
+
+        <div>
+          <Switch>
+            <Route exact path="/" component={mainPage} />
+            <Route exact path="/about-me" component={aboutMe} />
+            <Route exact path="/photography" component={photography} />
+          </Switch>
+
+        </div>
 
         {/* } */}
       </div>

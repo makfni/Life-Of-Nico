@@ -2,28 +2,33 @@ import styled from 'styled-components'
 
 export const Content = styled.div`
 
-    .content{
-        background-color: #1d1d1d;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding-bottom: 50px;
+    .page-container{
+        overflow: 'hidden';
     }
 
     #intro{
+        z-index: 999;
         width: 40%;
-        font-size: 3vw;
+        font-size: 4vw;
         font-family: 'Righteous';
         color: white;
-        margin-top: -350px;
-        margin-left: 150px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-left: 200px;
     }
 
     .solar-system{
-        padding-right: 150px;
-        position: relative;
-        float: right;
-        margin-top: -300px;
-        width: 400px;
-        height: 400px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 200px;
+        width: 500px;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,6 +47,10 @@ export const Content = styled.div`
         align-items: center;
         border: 1px solid #ffffffa5;
         border-radius: 50%;
+
+        &:hover{
+            animation-play-state: paused;
+        }
     }
 
     .github-orbit{
@@ -96,7 +105,7 @@ export const Content = styled.div`
         }
     }
 
-    .welcome{
+    ${'' /* .welcome{
         font-size: 1vw;
         border-width: 5px;
             border-style: solid;
@@ -113,5 +122,5 @@ export const Content = styled.div`
             text-align: center;
             margin: auto;
         }
-    }
+    } */}
 `
