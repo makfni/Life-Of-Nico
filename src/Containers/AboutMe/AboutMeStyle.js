@@ -5,8 +5,8 @@ const AboutMe = styled.div`
     .content{
         background-color: #1d1d1d;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding-bottom: 400px;
         margin-top: 80px;
+        height: 100%;
 
     }
 
@@ -23,7 +23,7 @@ const AboutMe = styled.div`
             color: white;
             float: right;
             width: 55%;
-            height: 400px;
+            height: auto;
             a{
                 
                 text-align: center;

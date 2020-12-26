@@ -10,9 +10,12 @@ const Photo = styled.div`
         align-items: center;
         justify-content: center;
         align-content: flex-start;
+        position: relative;
+        z-index: 0;
     }
     
     .singleImage {
+        margin-top: 25px;
         padding: 0 20px 20px;
         height: 300px;
         border-radius: 34;

@@ -5,6 +5,7 @@ import NavBar from './Components/Navbar/Navbar'
 import mainPage from './Containers/MainPage/MainPage'
 import aboutMe from './Containers/AboutMe/AboutMe'
 import photography from './Containers/Photography/Photography'
+import Auth from './Containers/Authentication/auth'
 // import BarLoader from "react-spinners/BarLoader";
 // import { css } from '@emotion/react'
 import './App.css'
@@ -47,6 +48,7 @@ function reactApp() {
             <Route exact path="/" component={mainPage} />
             <Route exact path="/about-me" component={aboutMe} />
             <Route exact path="/photography" component={photography} />
+            <Route exact path="/login-register" component={Auth} />
           </Switch>
 
         </div>

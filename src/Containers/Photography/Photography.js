@@ -45,9 +45,9 @@ export default class photography extends Component {
 
 
         return (
-            <div style={{ paddingLeft: '70px', paddingRight: '70px', paddingTop: '125px' }}>
+            <div style={{ paddingLeft: '70px', paddingRight: '70px' }}>
                 <Photo>
-                    <div className="container" >
+                    <div className="container" style={{ marginTop: '90px' }}>
                         {gallery}
                         {this.state.showModel ? (
                             <Popup

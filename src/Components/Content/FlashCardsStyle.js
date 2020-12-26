@@ -2,39 +2,45 @@ import styled from 'styled-components'
 
 export const Cards = styled.div`
     .chat{
+
         position: absolute;
         text-align: center;
-        margin-top: -300px; 
         vertical-align: middle;
-        width: 30%;
-        height: 200px;
-        margin-left: 810px;
-        background: white;
-        box-shadow: 2px 2px 4px 5px #ccc;
+        width: 45%;
+        height: auto;
         text-align: center;
         display: table;
+        border-width: 3px;
+            border-style: solid;
+            border-image: 
+            linear-gradient(to bottom, #743ad5, #d53a9d,  rgba(0, 0, 0, 0)
+            )
+                 1 100%;
         #chat{
-            width: 100%;
-            height: 100%;
-            display: table-cell;
-            vertical-align: middle;
+            padding: 3vw;
+            font-size: 2vw;
+            font-family: 'Righteous';
+            color: white;
         }
     }
 
     .upcoming{
-        margin-left: 150px;
-        width: 30%;
-        height: 200px;
-        background: white;
-        box-shadow: 2px 2px 4px 5px #ccc;
+        position: absolute;
+        width: 45%;
+        height: auto;
         text-align: center;
         display: table;
-
+        border-width: 3px;
+            border-style: solid;
+            border-image: 
+            linear-gradient(to bottom, #743ad5, #d53a9d,  rgba(0, 0, 0, 0)
+            )
+                 1 100%;
         #upcoming{
-            width: 100%;
-            height: 100%;
-            display: table-cell;
-            vertical-align: middle;
+            padding: 3vw;
+                font-size: 2vw;
+                font-family: 'Righteous';
+                color: white;
         }
     }
 

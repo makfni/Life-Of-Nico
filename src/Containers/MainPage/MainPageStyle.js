@@ -7,7 +7,6 @@ export const Content = styled.div`
     }
 
     #intro{
-        z-index: 999;
         width: 40%;
         font-size: 4vw;
         font-family: 'Righteous';
@@ -34,7 +33,7 @@ export const Content = styled.div`
         align-items: center;
     }
 
-    @media (max-width: 1300px){
+    @media (max-width: 1350px){
         .solar-system{
             display: none;
         }

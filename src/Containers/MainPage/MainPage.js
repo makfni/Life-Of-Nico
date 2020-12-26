@@ -23,7 +23,7 @@ class mainPage extends Component {
                         params={{
                             particles: {
                                 number: {
-                                    value: 50,
+                                    value: 60,
                                 },
                                 size: {
                                     value: 3,
